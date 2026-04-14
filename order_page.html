@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Shopping Cart</title>
+  <link rel="stylesheet" href="styles/order_page.css">
+  <link rel="stylesheet" href="styles/header.css">
+  <link rel="stylesheet" href="styles/footer.css">
+</head>
+
+<body>
+
+<header class="navbar">
+    <div class="logo-section">
+        <a href="#">
+            <img src="logo_1.png" alt="logo" >
+        </a>
+    </div>
+
+    <nav class="menu">
+        <div class="dropdown">
+            <h3>PRODUCTS</h3>
+            <div class="dropdown-content">
+                <a href="#">Cacti</a>
+                <a href="#">Succulent</a>
+                <a href="#">Fertilisers</a>
+                <a href="#">Accessories</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <h3>ENQUIRIES</h3>
+            <div class="dropdown-content">
+                <a href="#">NAME</a>
+                <a href="#">EMAIL ADDRESS</a>
+                <a href="#">CONTACT NUMBER</a>
+                <a href="#">QUESTION</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <h3>OUR TEAM</h3>
+            <div class="dropdown-content">
+                <a href="#">MARKETING</a>
+                <a href="#">SALES</a>
+                <a href="#">PROFILE</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="icons">
+        <img src="cart.png" alt="cart">
+        <img src="login.png" alt="login">
+    </div>
+</header>
+
+<h1>Shopping Cart</h1>
+
+<form>
+
+<div class="cart-container">
+
+  <!-- Items -->
+  <div class="cart-item">
+    <img src="Alpenglow.jpeg" class="product-img">
+    <div class="details">
+      <h3>Alpenglow</h3>
+      <p class="price">RM 29.90</p>
+    </div>
+    <div class="quantity">
+      <input type="number" value="1" min="1">
+    </div>
+  </div>
+
+  <div class="cart-item">
+    <img src="Gardening Gloves.jpeg" class="product-img">
+    <div class="details">
+      <h3>Gardening Gloves</h3>
+      <p class="price">RM 29.90</p>
+    </div>
+    <div class="quantity">
+      <input type="number" value="1" min="1">
+    </div>
+  </div>
+
+  <div class="cart-item">
+    <img src="Old Man Cactus.jpeg" class="product-img">
+    <div class="details">
+      <h3>Old Man Cactus</h3>
+      <p class="price">RM 29.90</p>
+    </div>
+    <div class="quantity">
+      <input type="number" value="1" min="1">
+    </div>
+  </div>
+
+  <div class="cart-item">
+    <img src="Peaty Soil.jpeg" class="product-img">
+    <div class="details">
+      <h3>Peaty Soil</h3>
+      <p class="price">RM 29.90</p>
+    </div>
+    <div class="quantity">
+      <input type="number" value="1" min="1">
+    </div>
+  </div>
+
+  <!-- Summary -->
+  <div class="summary-right">
+    <h2>Total</h2>
+    <p>RM 89.70</p>
+
+    <a href="#checkoutModal" class="checkout-btn">Checkout</a>
+  </div>
+
+</div>
+
+</form>
+
+<!-- Modal -->
+<div id="checkoutModal" class="modal">
+
+  <div class="modal-content">
+    
+    <a href="#" class="close-btn">&times;</a>
+
+    <h2>Checkout</h2>
+
+    <label>Name</label>
+    <input type="text" required>
+
+    <label>Phone</label>
+    <input type="text" required>
+
+    <label>Address</label>
+    <textarea required></textarea>
+
+    <label>Delivery Method</label>
+    <select required>
+      <option value="">Select</option>
+      <option>Standard Delivery (3-5 days)</option>
+      <option>Express Delivery (1-2 days)</option>
+      <option>Self Pickup</option>
+    </select>
+
+    <label>Payment Method</label>
+    <select required>
+      <option value="">Select</option>
+      <option>Visa</option>
+      <option>Touch 'n Go</option>
+      <option>COD</option>
+    </select>
+
+    <a href="#" class="confirm-btn">Confirm</a>
+
+  </div>
+
+</div>
+
+<!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div>
+                <h3>PRODUCTS</h3>
+                <p>Cacti</p>
+                <p>Succulent</p>
+                <p>Fertilisers</p>
+                <p>Accessories</p>
+            </div>
+
+            <div>
+                <h3>SUPPORT</h3>
+                <p>Contact Us</p>
+                <p>Enquire Us</p>
+                <p>About Us</p>
+            </div>
+
+            <div>
+                <h3>OUR TEAM</h3>
+                <p>Marketing</p>
+                <p>Sales</p>
+                <p>profile</p>
+            </div>
+
+            <div>
+                <h3>FOLLOW US</h3>
+                <p><img src="facebook icon.png" width="20" alt="facebook"> CACTI_SUCCULENT</p>
+                <p><img src="instagram icon.png" width="20" alt="instagram"> CACTI_SUCCULENT</p>
+                <p><img src="tiktok.png" width="20" alt="tiktok"> CACTI_SUCCULENT</p>
+            </div>
+        </div>
+
+        <p class="register">NOT A MEMBER YET? REGISTER NOW!</p>
+    </footer>
+
+</body>
+</html>

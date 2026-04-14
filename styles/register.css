@@ -1,0 +1,370 @@
+/*
+filename:Qiqi
+author:Qiqi
+created:30/3/2026
+last modified:13/4/2026
+description:register.html
+*/
+
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #bcc1aa;
+      font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, sans-serif;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 2rem 1.5rem;
+    }
+
+    .register-card {
+
+      max-width: 480px;
+      width: 100%;
+      border: 1px solid #bcc1aa;
+      background: #ffffff;
+      border-radius: 32px;
+      box-shadow: 0 10px 25px #bcc1aa;
+      padding: 2.2rem 2rem 2.5rem;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .register-card:hover {
+      box-shadow: 0 15px 30px #bcc1aa;
+      transform: translateY(-3px);
+    }
+
+    .brand {
+      text-align: center;
+      margin-bottom: 1.75rem;
+    }
+
+    .brand-logo-img {
+      display:block;
+      max-width:300px;
+      max-height:150px;
+      width:auto;
+      height:auto;
+      margin:0 auto 0.75rem auto;
+      object-fit:contain;
+    }
+
+    .greeting {
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: #233d00;
+      margin-top: 0.25rem;
+      letter-spacing: -0.3px;
+    }
+
+    .greeting-sub {
+      font-size:0.9rem;
+      color: #233d00;
+      margin-top: 0.25rem;
+      font-weight:400;
+    }
+
+    .login-form {
+      margin-top: 1.8rem;
+    }
+
+    .input-group {
+      margin-bottom: 1.5rem;
+    }
+
+    .input-label {
+      display: block;
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: #233d00;
+      margin-bottom: 0.5rem;
+      letter-spacing: -0.2px;
+    }
+
+    .input-field {
+      width: 100%;
+      padding: 0.85rem 1rem;
+      font-size: 1rem;
+      font-family: inherit;
+      background-color: #ffffff;
+      border: 1.5px solid #bcc1aa;
+      border-radius: 18px;
+      transition: all 0.2s ease;
+      color: #233d00;
+      outline: none;
+    }
+
+    .input-field:focus {
+      border-color: #233d00;
+      box-shadow: 0 0 0 2px #bcc1aa;
+    }
+
+    .input-field::placeholder {
+      color: #bcc1aa;
+      font-weight: 400;
+      font-size: 0.9rem;
+    }
+
+    .btn-signin {
+      width: 100%;
+      background: #233d00;
+      color: white;
+      border: none;
+      padding: 0.9rem 1rem;
+      font-size: 1rem;
+      font-weight: 600;
+      font-family: inherit;
+      border-radius: 40px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      margin-top: 0.5rem;
+      margin-bottom: 1.8rem;
+      box-shadow: 0 4px 8px #bcc1aa;
+      letter-spacing: 0.3px;
+    }
+
+    .btn-signin:hover {
+      background: #bcc1aa;
+      color: #233d00;
+      transform: translateY(-2px);
+    }
+
+    .btn-signin:active {
+      transform: translateY(1px);
+    }
+
+    .links-container {
+      text-align: center;
+      margin-top: 0.25rem;
+    }
+
+    .link-item {
+      margin-bottom: 1rem;
+    }
+
+    .link-item a {
+      color: #233d00;
+      text-decoration: none;
+      font-size: 0.9rem;
+      font-weight: 500;
+      transition: color 0.2s;
+    }
+
+    .link-item a:hover {
+      color: #233d00;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+
+    .register-text {
+      font-size: 0.9rem;
+      color: #233d00;
+    }
+
+    .register-text a {
+      color: #233d00;
+      font-weight: 600;
+      text-decoration: none;
+      margin-left: 0.25rem;
+    }
+
+    .register-text a:hover {
+      text-decoration: underline;
+    }
+
+    .forgot-link {
+      font-size: 0.85rem;
+    }
+
+    @media (max-width: 500px) {
+      .login-card {
+        padding: 1.8rem 1.5rem;
+      }
+      .brand-logo {
+        font-size: 1.7rem;
+      }
+      .greeting {
+        font-size: 1.3rem;
+      }
+    }
+
+    .input-field, .btn-signin {
+      transition: all 0.2s cubic-bezier(0.2, 0.9, 0.4, 1.1);
+    }
+
+     .modal {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #bcc1aa;
+      backdrop-filter: blur(4px);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      z-index: 1000;
+    }
+
+    .modal:target {
+      display: flex;
+    }
+
+    .modal-content {
+      background: #ffffff;
+      max-width: 480px;
+      width: 90%;
+      padding: 2rem 2rem;
+      border-radius: 32px;
+      box-shadow: 0 15px 30px #bcc1aa;
+      text-align: center;
+      animation: fadeInUp 0.2s ease;
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .modal-content h1 {
+      font-size: 1.8rem;
+      font-weight: 600;
+      color: #233d00;
+      margin-bottom: 0.75rem;
+    }
+
+    .modal-content p {
+      color: #233d00;
+      font-size: 0.95rem;
+      margin-bottom: 1.5rem;
+      line-height: 1.4;
+    }
+
+    .modal-input-group {
+      margin-bottom: 1.5rem;
+      text-align: left;
+    }
+
+    .modal-input-group label {
+      display: block;
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: #233d00;
+      margin-bottom: 0.5rem;
+    }
+
+    .modal-input {
+      width: 100%;
+      padding: 0.85rem 1rem;
+      font-size: 1rem;
+      border: 1.5px solid #bcc1aa;
+      border-radius: 18px;
+      outline: none;
+      font-family: inherit;
+      transition: all 0.2s;
+    }
+
+    .modal-input:focus {
+      border-color: #233d00;
+      box-shadow: 0 0 0 2px #bcc1aa;
+    }
+
+    .info-message {
+      background: #bcc1aa;
+      color: #233d00;
+      padding: 0.75rem 1rem;
+      border-radius: 18px;
+      font-size: 0.85rem;
+      margin-bottom: 1rem;
+      text-align: center;
+      border-left: 4px solid #233d00;
+    }
+
+    .modal-buttons {
+      display: flex;
+      flex-direction: column;
+      gap: 0.8rem;
+      margin-top: 0.5rem;
+    }
+
+    .modal-btn {
+      width: 100%;
+      padding: 0.85rem 1rem;
+      border-radius: 40px;
+      font-weight: 600;
+      cursor: pointer;
+      border: none;
+      font-family: inherit;
+      transition: all 0.2s;
+      font-size: 1rem;
+      text-decoration: none;
+      display: inline-block;
+      text-align: center;
+    }
+
+    .modal-btn-primary {
+      background: #233d00;
+      color: white;
+    }
+
+    .modal-btn-primary:hover {
+      background: #bcc1aa;
+      color: #233d00;
+    }
+
+    .modal-btn-secondary {
+      background: #bcc1aa;
+      color: #233d00;
+    }
+
+    .modal-btn-secondary:hover {
+      background: #bcc1aa;
+    }
+
+    .close-modal {
+      float: right;
+      font-size: 1.8rem;
+      font-weight: 300;
+      cursor: pointer;
+      color: #233d00;
+      text-decoration: none;
+      margin-top: -0.8rem;
+      margin-right: -0.8rem;
+    }
+
+    .close-modal:hover {
+      color: #233d00;
+    }
+
+    fieldset {
+  border: none;
+  padding: 0;
+  margin-bottom: 1.5rem;
+}
+
+legend {
+  font-weight: 600;
+  color: #233d00;
+  margin-bottom: 0.5rem;
+}
+
+.row {
+  display: flex;
+  gap: 15px;
+}
+
+.row .input-group {
+  flex: 1;
+}

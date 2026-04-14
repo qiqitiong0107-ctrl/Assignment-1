@@ -1,0 +1,201 @@
+/*
+filename:Qiqi
+author:Qiqi
+created:30/3/2026
+last modified:13/4/2026
+description:order_page.html
+*/
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  margin: 0;
+  background: #edece8;
+  padding-top: 100px;
+}
+
+/* Title */
+h1 {
+  text-align: center;
+  font-size: 28px;
+}
+
+/* Container */
+.cart-container {
+  width: 70%;
+  margin: 30px auto;
+}
+
+/* Cart item */
+.cart-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
+  background: white;
+  padding: 20px;
+  margin-bottom: 20px;
+
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+
+  transition: 0.3s;
+}
+
+.cart-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+/* Image */
+.product-img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.cart-item:hover .product-img {
+  transform: scale(1.1);
+}
+
+/* Details */
+.details {
+  flex: 1;
+}
+
+.details h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.price {
+  font-size: 14px;
+  color: #888;
+  margin-top: 5px;
+}
+
+/* Quantity */
+.quantity input {
+  width: 60px;
+  padding: 6px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+/* Summary */
+.summary-right {
+  text-align: right;
+  margin-top: 20px;
+}
+
+.summary-right h2 {
+  font-size: 24px;
+  margin: 0;
+}
+
+.summary-right p {
+  font-size: 18px;
+  font-weight: 500;
+  margin: 5px 0;
+}
+
+/* Button */
+.checkout-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #533201;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.checkout-btn:hover {
+  background: #3e2501;
+  transform: translateY(-2px);
+}
+
+/* Modal background */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+}
+
+.modal:target {
+  display: block;
+}
+
+/* Modal content */
+.modal-content {
+  background: white;
+  width: 400px;
+  margin: 100px auto;
+  padding: 20px;
+  border-radius: 12px;
+  animation: fadeIn 0.3s ease;
+}
+
+/* Inputs */
+.modal-content input,
+.modal-content textarea,
+.modal-content select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Focus */
+.modal-content input:focus,
+.modal-content textarea:focus,
+.modal-content select:focus {
+  outline: none;
+  border: 1px solid #533201;
+}
+
+/* Confirm button */
+.confirm-btn {
+  display: block;
+  width: 95%;
+  padding: 10px;
+  background: #533201;
+  color: white;
+  border-radius: 8px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.confirm-btn:hover {
+  background: #3e2501;
+}
+
+/* Close button */
+.close-btn {
+  float: right;
+  font-size: 22px;
+  text-decoration: none;
+  color: black;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

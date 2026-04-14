@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Enhancements</title>
+</head>
+
+<body>
+
+<h1>Enhancements</h1>
+<h2>1. Hover Effect on Cart Items</h2>
+<p>
+This enhancement adds a hover effect on each cart item in the shopping cart page.
+When the user hovers over a product, the card slightly lifts and the shadow becomes stronger.
+This improves user interaction and provides visual feedback.
+</p>
+
+<p><strong>Code used:</strong></p>
+<pre>
+.cart-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+</pre>
+
+<p><strong>Link:</strong> <a href="order_page.html">View Cart Page</a></p>
+
+<hr>
+<h2>2. Image Zoom on Hover</h2>
+<p>
+This enhancement applies a zoom-in effect to product images when the user hovers over the cart item.
+It makes the product more visually engaging and helps highlight product details.
+</p>
+
+<p><strong>Code used:</strong></p>
+<pre>
+.cart-item:hover .product-img {
+  transform: scale(1.1);
+}
+</pre>
+
+<p><strong>Link:</strong> <a href="order_page.html">View Cart Page</a></p>
+
+<hr>
+<h2>3. Button Interaction Effects</h2>
+<p>
+This enhancement improves button interactivity by adding hover animations.
+Buttons slightly move upward and change color when hovered, giving a more modern UI feel.
+</p>
+
+<p><strong>Code used:</strong></p>
+<pre>
+.checkout-btn:hover {
+  transform: translateY(-2px);
+  background: #3e2501;
+}
+</pre>
+
+<p><strong>Link:</strong> <a href="order_page.html">View Cart Page</a></p>
+
+<hr>
+<h2>4. Improved Form Layout Design</h2>
+<p>
+This enhancement improves the layout of the registration form.
+The fields are styled with rounded corners, spacing, and focus effects.
+Additionally, the City and State fields are arranged side by side using flexbox,
+making the form more compact and user-friendly.
+</p>
+
+<p><strong>Code used:</strong></p>
+<pre>
+.row {
+  display: flex;
+  gap: 15px;
+}
+
+.row .input-group {
+flex: 1;
+} </pre>
+
+<p><strong>Link:</strong> <a href="register.html">View Register Page</a></p>
+
+<hr>
+
+</body>
+</html>

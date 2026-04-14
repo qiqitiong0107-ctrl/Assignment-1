@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>REGISTER PAGE</title>
+  <link href="styles/register.css" rel="stylesheet"> 
+  <link rel="stylesheet" href="styles/header.css">
+  <link rel="stylesheet" href="styles/footer.css">
+</head>
+
+<body>
+
+<header class="navbar">
+    <div class="logo-section">
+        <a href="#">
+            <img src="logo_1.png" alt="logo" >
+        </a>
+    </div>
+
+    <nav class="menu">
+        <div class="dropdown">
+            <h3>PRODUCTS</h3>
+            <div class="dropdown-content">
+                <a href="#">Cacti</a>
+                <a href="#">Succulent</a>
+                <a href="#">Fertilisers</a>
+                <a href="#">Accessories</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <h3>ENQUIRIES</h3>
+            <div class="dropdown-content">
+                <a href="#">NAME</a>
+                <a href="#">EMAIL ADDRESS</a>
+                <a href="#">CONTACT NUMBER</a>
+                <a href="#">QUESTION</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <h3>OUR TEAM</h3>
+            <div class="dropdown-content">
+                <a href="#">MARKETING</a>
+                <a href="#">SALES</a>
+                <a href="#">PROFILE</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="icons">
+        <img src="cart.png" alt="cart">
+        <img src="login.png" alt="login">
+    </div>
+</header>
+
+<div class="register-card">
+
+  <div class="brand">
+  <img class="brand-logo-img"
+      src="logo.jpeg" alt="logo" >
+    <div class="greeting">Create your account</div>
+    <div class="greeting-sub">Join Cacti Succulent</div>
+  </div>
+
+  <form class="register-form">
+
+    <!-- First Name -->
+    <div class="input-group">
+      <label class="input-label">First Name</label>
+      <input type="text" class="input-field"
+        maxlength="25"
+        pattern="[A-Za-z ]+"
+        required>
+    </div>
+
+    <!-- Last Name -->
+    <div class="input-group">
+      <label class="input-label">Last Name</label>
+      <input type="text" class="input-field"
+        maxlength="25"
+        pattern="[A-Za-z ]+"
+        required>
+    </div>
+
+    <!-- Email -->
+    <div class="input-group">
+      <label class="input-label">Your email</label>
+      <input type="email" class="input-field" required>
+    </div>
+
+    <!-- Phone -->
+    <div class="input-group">
+      <label class="input-label">Phone Number</label>
+      <input type="tel" class="input-field"
+        pattern="[0-9]{10}"
+        placeholder="0123456789"
+        required>
+    </div>
+
+    <!-- Address -->
+    <fieldset>
+      <legend>Address</legend>
+
+      <div class="input-group">
+        <label class="input-label">Street Address</label>
+        <input type="text" class="input-field" maxlength="40" required>
+      </div>
+
+    <div class="row">
+        <div class="input-group">
+        <label class="input-label">City</label>
+        <input type="text" class="input-field" maxlength="20" required>
+    </div>
+
+        <div class="input-group">
+        <label class="input-label">State</label>
+        <select class="input-field" required>
+          <option value="">Select State</option>
+          <option>Selangor</option>
+          <option>Johor</option>
+          <option>Sarawak</option>
+          <option>Sabah</option>
+        </select>
+    </div>
+
+</div>
+
+      <div class="input-group">
+        <label class="input-label">Postcode</label>
+        <input type="text" class="input-field"
+          pattern="[0-9]{5}"
+          placeholder="5 digits"
+          required>
+      </div>
+
+    </fieldset>
+
+    <!-- Button -->
+    <button type="submit" class="btn-signin">Register →</button>
+
+    <!-- Link -->
+    <div class="links-container">
+      <div class="register-text">
+        Already have an account?
+      </div>
+    </div>
+
+  </form>
+
+</div>
+
+<!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div>
+                <h3>PRODUCTS</h3>
+                <p>Cacti</p>
+                <p>Succulent</p>
+                <p>Fertilisers</p>
+                <p>Accessories</p>
+            </div>
+
+            <div>
+                <h3>SUPPORT</h3>
+                <p>Contact Us</p>
+                <p>Enquire Us</p>
+                <p>About Us</p>
+            </div>
+
+            <div>
+                <h3>OUR TEAM</h3>
+                <p>Marketing</p>
+                <p>Sales</p>
+                <p>profile</p>
+            </div>
+
+            <div>
+                <h3>FOLLOW US</h3>
+                <p><img src="facebook icon.png" width="20" alt="facebook"> CACTI_SUCCULENT</p>
+                <p><img src="instagram icon.png" width="20" alt="instagram"> CACTI_SUCCULENT</p>
+                <p><img src="tiktok.png" width="20" alt="tiktok"> CACTI_SUCCULENT</p>
+            </div>
+        </div>
+
+        <p class="register">NOT A MEMBER YET? REGISTER NOW!</p>
+    </footer>
+
+</body>
+</html>
