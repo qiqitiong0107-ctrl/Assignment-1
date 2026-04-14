@@ -1,0 +1,106 @@
+/*header*/
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #bcc1aa;
+    padding: 5px 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: all 0.3s ease;
+    height: 80px;  
+}
+
+    .logo-section img {
+        width: auto;   
+        height: 180px;  
+        object-fit: contain; 
+    }
+
+    .navbar.scrolled {
+        background-color: #233d00(83, 50, 1, 0.6);
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .navbar.scrolled .dropdown-content {
+        background-color: rgba(83, 50, 1, 0.7);
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+        border-radius: 12px;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .menu {
+        display: flex;
+        gap: 60px;
+    }
+
+    .menu a {
+        text-decoration: none;
+        color: white;
+        font-size: 13px;
+        letter-spacing: 2px;
+    }
+
+    .icons {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .icons img {
+        height: 50px;
+        cursor: pointer;
+    }
+
+    .dropdown {
+        position: relative;
+        width: 200px;
+    }
+
+    .dropdown-content {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #bcc1aa;
+        padding: 10px 0;
+        min-width: 180px;
+        z-index: 10;
+        border-radius: 0 0 12px 12px;
+        font-size: 12px;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: flex;
+    }
+
+    .dropdown-content a {
+        color: white;
+        text-decoration: none;
+        padding: 5px 20px;
+        font-size: 13px;
+        font-weight: normal;
+        white-space: nowrap;
+    }
+    .dropdown-content a:hover {
+        color: #233d00;
+        background-color: #bcc1aa;
+    }
+
+    .dropdown h3 {
+        cursor: pointer;
+        margin: 0;
+        padding: 5px 0;
+        color: white;
+        font-size: 15px;  
+    }
+/*header*/
