@@ -1,16 +1,310 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Home</title>
+  <meta charset="utf-8" />
+  <meta name="description" content=" " />
+  <meta name="keywords" content=" " />
+  <meta name="author" content=" "  />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="Style/Index.css" type="text/css" rel="stylesheet" />
+<link href="Style/header.css" type="text/css" rel="stylesheet" />
+<link href="Style/footer.css" type="text/css" rel="stylesheet" />
+
+  <title>Cacti-Succelent</title>
 </head>
 
 <body>
+ <header class="navbar">
+        <div class="logo-section">
+            <a href="#"><img src="Images/logo.png" alt="logo"></a>
+           
+        </div>
 
-<h1>Welcome to Cacti Succulent</h1>
+        <nav class="menu">
+            <div class="dropdown">
+                <h3>PRODUCTS</h3>
+                <div class="dropdown-content">
+                    <a href="#">Cacti</a>
+                    <a href="#">Succulent</a>
+                    <a href="#">Fertilisers</a>
+                    <a href="#">Accessories</a>
+                </div>
+            </div>
 
-<a href="register.html">Register</a><br>
-<a href="order_page.html">Shopping Cart</a><br>
-<a href="enhancement1.html">Enhancements</a>
+            <div class="dropdown">
+                <h3>ENQUIRIES</h3>
+                <div class="dropdown-content">
+                    <a href="#">NAME</a>
+                    <a href="#">EMAIL ADDRESS</a>
+                    <a href="#">CONTACT NUMBER</a>
+                    <a href="#">QUESTION</a>
+                </div>
+            </div>
 
+            <div class="dropdown">
+                <h3>OUR TEAM</h3>
+                <div class="dropdown-content">
+                    <a href="#">MARKETING</a>
+                    <a href="#">SALES</a>
+                    <a href="#">PROFILE</a>
+                </div>
+            </div>
+        </nav>
+
+        <div class="icons">
+            <img src="Images/cart.png" alt="cart">
+            <img src="Images/login.png" alt="login">
+        </div>
+    </header>
+
+
+<div class="Banner-Container">
+
+  <input type="radio" name="banner-control" id="slide1" checked>
+  <input type="radio" name="banner-control" id="slide2">
+  <input type="radio" name="banner-control" id="slide3">
+
+  <div class="Banner-Slider">
+    <video autoplay muted loop playsinline class="video-banner">
+      <source src="Images/Banner1.mp4" type="video/mp4">
+    </video>
+    <video autoplay muted loop playsinline class="video-banner">
+      <source src="Images/Banner2.mp4" type="video/mp4">
+    </video>
+    <video autoplay muted loop playsinline class="video-banner">
+      <source src="Images/BANNER 3.mp4" type="video/mp4">
+    </video>
+  </div>
+
+  <!-- Clickable Arrows (Labels linked to Radios) -->
+  <!-- On Slide 1, these arrows appear: -->
+  <label for="slide3" class="arrow left arrow-1">&#10094;</label>
+  <label for="slide2" class="arrow right arrow-1">&#10095;</label>
+
+  <!-- On Slide 2, these arrows appear: -->
+  <label for="slide1" class="arrow left arrow-2">&#10094;</label>
+  <label for="slide3" class="arrow right arrow-2">&#10095;</label>
+
+  <!-- On Slide 3, these arrows appear: -->
+  <label for="slide2" class="arrow left arrow-3">&#10094;</label>
+  <label for="slide1" class="arrow right arrow-3">&#10095;</label>
+
+</div>
+
+ 
+<br>
+<section>
+  <h1 class="tphead"><strong><em>#Hot Picks</em></strong></h1>
+  <br>
+
+  <div class="toppick">
+    <!-- Card 1 -->
+    <div class="products">
+      <div class="front">
+        <a href="Product_page.html"><img src="Images/AutumnBeauty.jpeg" alt="TopPick1"></a>
+        <p>Autumn Beauty</p>
+      </div>
+      <div class="back">
+        <h3><em><strong>#1 Echeveria (Best Seller)</strong></em></h3>
+        <p>A rosette-shaped succulent with fleshy, colorful leaves. Low-maintenance and perfect for indoor or outdoor décor.</p>
+         <a href="#shop" class="purchasebutton">BUY NOW</a>
+
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="products">
+      <div class="front">
+        <a href="Product_page.html"><img src="Images/Alpenglow.jpeg" alt="TopPick2"></a>
+        <p>Alpenglow</p>
+      </div>
+      <div class="back">
+        <h3><em><strong>#2 Crassula Ovata (Best Seller)</strong></em></h3>
+        <p>Also known as the Jade Plant, it features thick, glossy leaves and a tree-like shape. Symbolizes luck and prosperity.</p>
+        <a href="#shop" class="purchasebutton">BUY NOW</a>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="products">
+      <div class="front">
+        <a href="Product_page.html"><img src="Images/StarCactus.jpeg" alt="TopPick3"></a>
+        <p>Star Cactus</p>
+      </div>
+      <div class="back">
+        <h3><em><strong>#3 Opuntia (Best Seller)</strong></em></h3>
+        <p>Commonly called the Prickly Pear Cactus, it has flat, paddle-shaped stems and occasional flowers. Ideal for sunny spots and adds a bold statement to any collection.</p>
+        <a href="#shop" class="purchasebutton">BUY NOW</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="midbanner">
+
+   <p class="whychooseus">Why you should <br> choose <br> US?</p>
+  
+  <div class="chooseus">
+   <img src="Images/affordable.1.png" alt="pic1">
+    <p>Affordable</p>
+  </div>
+
+
+  <div class="fastdelivery" >
+    <img src="Images/fastdelivery.1.png" alt="pic2">
+    <p>Fast delivery</p>
+  </div>
+
+  <div class="chooseus">
+  <img src="Images/trusted_seller.1.png" alt="pic3">
+   <p>Trusted seller</p>
+  </div>
+
+</section>
+
+   <!--Section 1-->
+    <section id="succulents">
+      <h2 class="section-title">Shop by types</h2>
+      <div class="product-grid">
+
+        <!--Product 1-->
+        <div class="product-card">
+          <div class="product-image">
+            <img src="Images/AutumnBeauty.jpeg" alt="autumnbeauty">
+          </div>
+
+          <div class="product_name">Autumn Beauty</div>
+          <div class="price">29.90</div>
+          <a href="#modal-autumn" class="arrow-btn">→</a>
+          </div>
+          
+        <!--product 2-->
+        <div class="product-card">
+          <div class="product-image">
+            <img src="Images/YellowBeauty.jpeg" alt="yellowbeauty ">
+          </div>
+
+          <div class="product_name">Yellow Beauty</div>
+          <div class="price">29.90</div>
+          <a href="#modal-yellow" class="arrow-btn">→</a>
+          </div>
+
+          <!--product 3-->
+          <div class="product-card">
+          <div class="product-image">
+            <img src="Images/Lacegirl.jpeg" alt="lacegirl ">
+          </div>
+
+          <div class="product_name">Lace Girl</div>
+          <div class="price">29.90</div>
+          <a href="#modal-lace" class="arrow-btn">→</a>
+          </div>
+
+        <!--product 4-->
+        <div class="product-card">
+          <div class="product-image">
+            <img src="Images/Hens&Chicks.jpeg" alt="hensandchicks ">
+          </div>
+
+          <div class="product_name">Hens and Chicks</div>
+          <div class="price">29.90</div>
+          <a href="#modal-hens" class="arrow-btn">→</a>
+          </div>
+
+        <!--product 5-->
+        <div class="product-card">
+          <div class="product-image">
+            <img src="Images/JellyBeanPlant.jpeg" alt="jellybeanplant">
+          </div>
+
+          <div class="product_name">Jelly Bean Plant</div>
+          <div class="price">29.90</div>
+          <a href="#modal-jelly" class="arrow-btn">→</a>
+          </div>
+
+        <!--product 6-->
+        <div class="product-card">
+          <div class="product-image">
+            <img src="Images/LavendarScallops.jpeg" alt="lavenderscallops">
+          </div>
+
+          <div class="product_name">Lavender Scallops</div>
+          <div class="price">29.90</div>
+          <a href="#modal-lavender" class="arrow-btn">→</a>
+          </div>
+      </div>
+
+          <div class="linktoproductpage">
+           <p><a href="#products">Shop more</a></p>
+          </div>
+
+    </section>
+
+<hr class="line" >
+
+ <section class="AboutPage">
+
+        <div class="aboutmap">
+             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3944.6639131134566!2d115.22068457802219!3d-8.628227469289763!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd23f9eadedbbfd%3A0x396622dd0983bc72!2sBali%20Cacti%20%26%20Succulents!5e0!3m2!1sen!2smy!4v1776140969461!5m2!1sen!2smy"; 
+             width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+             </iframe>
+        </div>
+
+        <div class="abouttext">
+          <div>
+            <h1>About Us</h1>
+            <p>At Cacti Succulent, we believe small plants can make a big difference. What began as a passion has grown into a small business sharing the charm of cacti and succulents, perfect for any space.</p>
+            <p><strong>📍 Bali Cacti & Succulents</strong><p>
+            <p>Perumahan Sangging Residence,<br>
+               Gg. Sangging No.8, Tonja, <br>
+               Kec. Denpasar Utara, Kota Denpasar,<br>
+               Bali 80235, Indonesia.</p>
+            </div>
+        </div>
+
+        <div class="learnabout">
+         <p><a href ="Aboutus.html">Learn More</a></p> 
+        </div>      
+  </section>
+
+
+  
+  <footer class="footer" >
+  <div class="footer-container">
+
+    <div>
+      <h3>PRODUCTS</h3>
+      <p>Cacti</p>
+      <p>Succulent</p>
+      <p>Fertilisers</p>
+    </div>
+
+    <div>
+      <h3>SUPPORT</h3>
+      <p>Contact Us</p>
+      <p>Enquire Us</p>
+      <p>About Us</p>
+    </div>
+
+    <div>
+      <h3>OUR TEAM</h3>
+      <p>Marketing</p>
+      <p>Sales</p>
+    </div>
+
+    <div>
+      <h3>FOLLOW US</h3>
+      <p><img src="Images/facebook icon.png" width="20"> CACTI_SUCCULENT</p>
+      <p><img src="Images/instagram icon.png" width="20"> CACTI_SUCCULENT</p>
+      <p><img src="Images/tiktok.png" width="20"> CACTI_SUCCULENT</p>
+    </div>
+
+  </div>
+
+  <p class="register">NOT A MEMBER YET? REGISTER NOW!</p>
+
+  
+</footer>
 </body>
 </html>

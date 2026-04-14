@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="description" content=" " />
+  <meta name="keywords" content=" " />
+  <meta name="author" content=" "  />
+
+  <link href="Style/Enquiry.css" type="text/css" rel="stylesheet" />
+  <link href="Style/header.css" type="text/css" rel="stylesheet" />
+  <link href="Style/footer.css" type="text/css" rel="stylesheet" />
+
+
+  <title>Enquiry</title>
+</head>
+
+<body>
+  <header class="navbar">
+    
+    
+    <div class="logo-section">
+      <a href="index.html"> <img src="Images/logo.png" alt="logo"></a>
+    </div>
+
+    <nav class="menu">
+      <div class="dropdown">
+  <h3>PRODUCTS</h3>
+  
+  <div class="dropdown-content">
+    <a href="#">Cacti</a>
+    <a href="#">Succulent</a>
+    <a href="#">Fertilisers</a>
+    <a href="#">Accessories</a>
+  </div>
+</div>
+
+<div class="dropdown">
+  <h3>ENQUIRES</h3>
+  
+  <div class="dropdown-content">
+    <a href="#">Contact Us</a>
+    <a href="Enquiry.html">Enquiry Form</a>
+    <a href="#">CONTACT NUMBER</a>
+    <a href="#">QUESTION</a>
+  </div>
+</div>
+
+<div class="dropdown">
+  <h3>OUR TEAM</h3>
+  
+  <div class="dropdown-content">
+    <a href="#">MARKETING</a>
+    <a href="#">SALES</a>
+  </div>
+</div>
+    
+    </nav>
+
+    <div class="icons">
+        <img src="Images/cart.png" alt="cart">
+        <img src="Images/login.png" alt="login">
+    </div>
+
+</header>
+
+<section class="form-card">
+  <br>
+  <br>
+  <div class="inputtitle">
+    <h1>Enquiry Form</h1>
+    <p>If you would like to speak to our staff, please call our enquiry line on +60 82 444 666.<br>Operating hours are Monday to Friday from 9am to 5pm, GMT +08:00.</p>
+    <P>Otherwise, please complete the form below and we’ll respond to your enquiry within three business days.</P>
+  </div>
+
+<form method="post" action="mailto:104399197@students.swinburne.com.my">
+
+  <br>
+  <br>
+
+<div class="inputname">  
+  <div class="Name">
+    <p><label for = "firstname" class="inputtitle"><strong>First Name</strong></label></p>
+        <input type="text" id="firstname" name="firstname" 
+         pattern="[A-Za-z]+"
+         size="26" maxlength="20" required="required">
+   </div>
+
+   <div class="Name">
+   <p> <label for = "lastname" class="inputtitle"><strong>Last Name</strong></label></p>
+        <input type="text" id="lastname" name="lastname" 
+         pattern="[A-Za-z]+"
+         size="26" maxlength="20" required="required">
+  </div>
+
+</div>
+
+<br>
+
+<div class="Name">
+    <p><label for = "email" class="inputtitle" id="emailtitle"><strong>Email</strong></label></p>
+         <input type="email" id="email" name="email" 
+          pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}"
+          size="62" maxlength="50" placeholder="xxxx@gmail.com" required="required">
+</div>
+
+<br>
+<br>
+
+<div class="numbernsubject">
+  <div class="Name">
+    <p><label for = "phone" class="inputtitle"><strong>Phone Number</strong></label></p>
+          <select name = "code" id="code" >
+             <option value ="malaysia" >+60</option>
+             <option value = "singapore">+65</option>
+             <option value = "indo">+62</option>
+           </select>
+          <input type="tel" id="phone" name="phone"
+          pattern="\d{9,12}" placeholder = "012 345 6789"
+          size="20" maxlength="12" required="required"> 
+  </div>
+  <div class="Name">
+    <p><label for = "subject" class="inputtitle"><strong>Subject</strong></label></p>
+          <select name = "subject" id="subject" required="required">
+             <option value ="" disabled selected class="dropdown">Select</option>
+             <option value ="products" >Products Enquiries</option>
+             <option value = "bulk">Bulk Purchase</option>
+             <option value = "others">Others</option>
+           </select>
+  </div>
+</div>
+
+<br>
+<div class="questions">
+  <label for="comment" class="inputtitle"><strong>Comments </strong></label>
+    <textarea name = "comments" id="comments"  rows="10" cols="60" placeholder="Write your enquiries here."></textarea>
+</div>
+
+<br>
+
+  <div class="buttons">
+      <input type="submit" class="submitclear" value="Submit">
+      <input type="reset" class="submitclear" value="Clear">
+  </div>
+</div>
+</section>
+
+  <footer class="footer" >
+  <div class="footer-container">
+
+    <div>
+      <h3>PRODUCTS</h3>
+      <p>Cacti</p>
+      <p>Succulent</p>
+      <p>Fertilisers</p>
+    </div>
+
+    <div>
+      <h3>SUPPORT</h3>
+      <p>Contact Us</p>
+      <p>Enquire Us</p>
+      <p>About Us</p>
+    </div>
+
+    <div>
+      <h3>OUR TEAM</h3>
+      <p>Marketing</p>
+      <p>Sales</p>
+    </div>
+
+    <div>
+      <h3>FOLLOW US</h3>
+      <p><img src="Images/facebook icon.png" width="20"> CACTI_SUCCULENT</p>
+      <p><img src="Images/instagram icon.png" width="20"> CACTI_SUCCULENT</p>
+      <p><img src="Images/tiktok.png" width="20"> CACTI_SUCCULENT</p>
+    </div>
+
+  </div>
+
+  <p class="register">NOT A MEMBER YET? REGISTER NOW!</p>
+
+  
+</footer>
+</form>
+</body>
+</html>
